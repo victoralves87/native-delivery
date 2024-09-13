@@ -37,7 +37,8 @@ const Home = () => {
         restaurantes.map((restaurante,index) => {
             return <View key={index}>
                 <Restaurante logotipo={restaurante.logotipo}
-                  nome={restaurante.nome} endereco={restaurante.endereco} />
+                  nome={restaurante.nome} endereco={restaurante.endereco} 
+                  icone={icons.favoritoFull}/>
             </View>
         })
       }

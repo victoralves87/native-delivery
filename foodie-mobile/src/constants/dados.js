@@ -75,3 +75,31 @@ export const restaurantes = [
         logotipo: require("../Assets/restaurante2.png")
     }
 ];
+
+
+export const pedidos = [
+    {
+        id: 1,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        logotipo: require("../Assets/restaurante1.png")
+    },
+    {
+        id: 2,
+        nome: "The Keba’s Bar",
+        endereco: "Rua Rui Barbosa, 512",
+        logotipo: require("../Assets/restaurante2.png")
+    },
+    {
+        id: 3,
+        nome: "Churrascaria e Pizzaria Boizão",
+        endereco: "Alamensa Santos, 954",
+        logotipo: require("../Assets/restaurante1.png")
+    },
+    {
+        id: 4,
+        nome: "The Keba’s Bar",
+        endereco: "Rua Rui Barbosa, 512",
+        logotipo: require("../Assets/restaurante2.png")
+    }
+];
