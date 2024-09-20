@@ -1,10 +1,24 @@
-import React from 'react'
-import { View } from 'react-native'
+import { View, Image, Text } from "react-native";
+import { styles } from "./Pedido-style.js";
 
-const Pedido = () => {
-  return <View>
-    
-  </View>
+function Pedido(props) {
+  return (
+    <View style={styles.pedido}>
+      <Image source={props.logotipo} style={styles.logotipo} />
+      <View style={styles.textos}>
+        <Text style={styles.nome}>{props.nome}</Text>
+        <View style={styles.containerValor}>
+          <Text style={styles.valor}>
+            {new Intl.NumberFormat("pt-BR", { style: "currency", currency:"BRL" }).format(props.valor)}
+          </Text>
+          <Text style={styles.valor}>{props.dt_pedido}</Text>
+        </View>
+      </View>
+      <View>
+        <Text style={styles.status}>{props.status}</Text>
+      </View>
+    </View>
+  );
 }
 
-export default Pedido
+export default Pedido;
